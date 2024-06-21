@@ -1,7 +1,5 @@
 # Node Bundler
 
-## Projekti Kirjeldus
-
 See projekt on Node.js skript, mis töötleb JavaScripti faile, leides ja rekursiivselt sidudes kõik lokaalsed 'require' kutsed. Projekti eesmärk on koondada kõik projektis kasutatavad failid üheks suureks failiks, et lihtsustada nende kasutamist ja levitamist.
 
 Projekti eesmärk on pakkuda lihtsat ja tõhusat viisi kõigi projektis kasutatavate failide koondamiseks üheks failiks selleks, et anda loodud fail näiteks AI-le analüüsimiseks, dokumentatsiooni loomiseks jne.
