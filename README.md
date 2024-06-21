@@ -14,12 +14,11 @@ Projekti eesmärk on pakkuda lihtsat ja tõhusat viisi kõigi projektis kasutata
    Veendu, et Su arvutisse on paigaldatud `Node.js` ja `npm`. Kui need ei ole paigaldatud, saad need alla laadida ja paigaldada [Node.js ametlikult lehelt](https://nodejs.org/).
 
 - **Projekti allalaadimine ja sõltuvuste paigaldamine**:
-   Laadi alla projekti kood ja paigalda vajalikud sõltuvused:
+   Laadi alla projekti kood:
 
    ```bash
-   git clone <projekti-repo-url>
-   cd <projekti-kaust>
-   npm install
+   git clone https://github.com/tluhk/Node-bundler.git
+   cd Node-bundler
    ```
 
 ## Kasutamine
