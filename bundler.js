@@ -54,10 +54,10 @@ function bundleFiles(entryFile, outputFile) {
   // Kirjuta kõik failid üheks, lisades iga faili nime separaatoriks
   const bundledContent = Array.from(fileContents.entries()).map(([filePath, content]) => {
     return `
-    // --- File: ${filePath} ---
-    
-    ${content}
-    `;
+// --- File: ${filePath} ---
+
+${content}
+`;
   }).join('\n');
 
   fs.writeFileSync(outputFile, bundledContent, 'utf-8');
