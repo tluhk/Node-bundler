@@ -48,11 +48,18 @@ function processFile(filePath) {
 
 // Funktsioon, et koondada kõik failid üheks
 function bundleFiles(entryFile, outputFile) {
-  // Alusta projekti põhi failist (nt. app.js)
+  // Alusta projekti põhifailist (nt. app.js)
   processFile(entryFile);
 
-  // Kirjuta kõik failid üheks
-  const bundledContent = Array.from(fileContents.values()).join('\n\n// --- File separator ---\n\n');
+  // Kirjuta kõik failid üheks, lisades iga faili nime separaatoriks
+  const bundledContent = Array.from(fileContents.entries()).map(([filePath, content]) => {
+    return `
+    // --- File: ${filePath} ---
+    
+    ${content}
+    `;
+  }).join('\n');
+
   fs.writeFileSync(outputFile, bundledContent, 'utf-8');
   console.log(`Bundled content written to ${outputFile}`);
 }
